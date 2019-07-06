@@ -1,0 +1,14 @@
+note_on channel=9 note=51 velocity=44 time=0
+note_off channel=9 note=51 velocity=0 time=0
+note_on channel=9 note=51 velocity=46 time=0
+note_off channel=9 note=51 velocity=0 time=0
+note_on channel=9 note=51 velocity=42 time=0
+note_off channel=9 note=51 velocity=0 time=0
+note_on channel=9 note=51 velocity=48 time=0
+note_off channel=9 note=51 velocity=0 time=0
+note_on channel=9 note=51 velocity=44 time=0
+note_off channel=9 note=51 velocity=0 time=0
+note_on channel=9 note=51 velocity=48 time=0
+note_off channel=9 note=51 velocity=0 time=0
+note_on channel=9 note=51 velocity=58 time=0
+note_off channel=9 note=51 velocity=0 time=0

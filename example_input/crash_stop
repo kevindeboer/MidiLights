@@ -1,0 +1,26 @@
+note_on channel=9 note=49 velocity=53 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=49 velocity=34 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=49 velocity=32 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=34 velocity=127 time=0 <-- stop
+note_off channel=9 note=34 velocity=0 time=0
+note_on channel=9 note=49 velocity=48 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=49 velocity=42 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=34 velocity=127 time=0
+note_off channel=9 note=34 velocity=0 time=0
+note_on channel=9 note=49 velocity=34 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=34 velocity=127 time=0
+note_off channel=9 note=34 velocity=0 time=0
+note_on channel=9 note=49 velocity=40 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=34 velocity=127 time=0
+note_off channel=9 note=34 velocity=0 time=0
+note_on channel=9 note=49 velocity=40 time=0
+note_off channel=9 note=49 velocity=0 time=0
+note_on channel=9 note=34 velocity=127 time=0
+note_off channel=9 note=34 velocity=0 time=0

@@ -1,0 +1,12 @@
+note_on channel=9 note=43 velocity=53 time=0
+note_off channel=9 note=43 velocity=0 time=0
+note_on channel=9 note=43 velocity=84 time=0
+note_off channel=9 note=43 velocity=0 time=0
+note_on channel=9 note=43 velocity=93 time=0
+note_off channel=9 note=43 velocity=0 time=0
+note_on channel=9 note=43 velocity=62 time=0
+note_off channel=9 note=43 velocity=0 time=0
+note_on channel=9 note=43 velocity=99 time=0
+note_off channel=9 note=43 velocity=0 time=0
+note_on channel=9 note=43 velocity=89 time=0
+note_off channel=9 note=43 velocity=0 time=0
