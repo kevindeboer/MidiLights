@@ -35,6 +35,7 @@ def main():
         
 
 def test():
+    """A simple test function that mocks actual midi signals."""
     from instruments import Note
 
     class Midi:

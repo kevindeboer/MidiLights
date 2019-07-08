@@ -1,4 +1,5 @@
 class Note:
+    """List of midi notes produced by my drumkit."""
     HiHatStop = 44
     HiHat = 46
     HiHatFootTap = 30
@@ -19,15 +20,15 @@ class Note:
     Tom3Rim = 41
     Tom4Head = 63
 
-    ALL = [44,46,30,49,34,60,36,53,51,25,38,40,47,50,45,48,43,41,63] #just for choice
+    ALL = [44,46,30,49,34,60,36,53,51,25,38,40,47,50,45,48,43,41,63] #just for testing 
 
 class Instrument:
-
+    """Represents a single component of my drumkit."""
 	def __init__(self, *notes):
 		self.notes = notes
 
 class Instruments:
-
+    """Mapping of which instrument produces which notes."""
 	HIHAT = Instrument(Note.HiHatStop, Note.HiHat, Note.HiHatFootTap)
 	CRASH1 = Instrument(Note.Crash1, Note.Crash1Stop)
 	CRASH2 = Instrument(Note.Crash2)
