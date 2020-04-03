@@ -14,7 +14,8 @@ LED_BRIGHTNESS = 100     # Set to 0 for darkest and 255 for brightest
 LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
 LED_CHANNEL    = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
-inport = mido.open_input('USB2MIDI:USB2MIDI MIDI 1 20:0')
+# inport = mido.open_input('USB2MIDI:USB2MIDI MIDI 1 20:0')
+inport = mido.open_input('USB DM10 MIDI Interface:USB DM10 MIDI Interface MIDI 1 20:0')
 
 def reset_pins(strip):
     for i in range(LED_COUNT):
@@ -48,6 +49,19 @@ def test():
     while True:
         midi_signal_processor.process(Midi())
         time.sleep(0.2)
+
+
+def test_mido():
+    """Test receiving midi signals"""
+    import mido
+
+    print(mido.get_input_names())
+
+    inport = mido.open_input('USB DM10 MIDI Interface:USB DM10 MIDI Interface MIDI 1 20:0')
+
+    while True:
+        midi = inport.receive()
+        print(midi)
 
 
 if __name__ == '__main__':

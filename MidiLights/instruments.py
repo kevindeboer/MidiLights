@@ -9,6 +9,7 @@ class Note:
     Kick = 36
     RideBell = 53
     RideBow = 51
+    # RideBow = 64
     RideRim = 25
     SnareHead = 38
     SnareRim = 40
@@ -24,18 +25,18 @@ class Note:
 
 class Instrument:
     """Represents a single component of my drumkit."""
-	def __init__(self, *notes):
-		self.notes = notes
+    def __init__(self, *notes):
+        self.notes = notes
 
 class Instruments:
     """Mapping of which instrument produces which notes."""
-	HIHAT = Instrument(Note.HiHatStop, Note.HiHat, Note.HiHatFootTap)
-	CRASH1 = Instrument(Note.Crash1, Note.Crash1Stop)
-	CRASH2 = Instrument(Note.Crash2)
-	KICK = Instrument(Note.Kick)
-	RIDE = Instrument(Note.RideBell, Note.RideBow, Note.RideRim)
-	SNARE = Instrument(Note.SnareHead, Note.SnareRim)
-	TOM1 = Instrument(Note.Tom1Head, Note.Tom1Rim)
-	TOM2 = Instrument(Note.Tom2Head, Note.Tom2Rim)
-	TOM3 = Instrument(Note.Tom3Head, Note.Tom3Rim)
-	TOM4 = Instrument(Note.Tom4Head)
+    HIHAT = Instrument(Note.HiHatStop, Note.HiHat, Note.HiHatFootTap)
+    CRASH1 = Instrument(Note.Crash1, Note.Crash1Stop)
+    CRASH2 = Instrument(Note.Crash2)
+    KICK = Instrument(Note.Kick)
+    RIDE = Instrument(Note.RideBell, Note.RideBow, Note.RideRim)
+    SNARE = Instrument(Note.SnareHead, Note.SnareRim)
+    TOM1 = Instrument(Note.Tom1Head, Note.Tom1Rim)
+    TOM2 = Instrument(Note.Tom2Head, Note.Tom2Rim)
+    TOM3 = Instrument(Note.Tom3Head, Note.Tom3Rim)
+    TOM4 = Instrument(Note.Tom4Head)

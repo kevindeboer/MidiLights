@@ -34,7 +34,7 @@ class DirectorySynchronizer(Thread):
 
     def sync_directories(self):
         print("sync source: '{0}' -> destination '{1}'".format(self.source_path, self.pi_destination_path))
-        command = "rsync -avz {0} -e ssh pi@192.168.188.2:{1} --delete".format(self.source_path, self.pi_destination_path)
+        command = "rsync -avz {0} -e ssh pi@192.168.188.17:{1} --delete".format(self.source_path, self.pi_destination_path)
         os.system(command)
 
     def run(self):

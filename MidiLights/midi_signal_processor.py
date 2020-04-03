@@ -3,6 +3,9 @@ from instruments import Instruments
 
 
 class MidiSignalProcessor:
+
+    ignore_notes = [64]
+
     """Control the leds on the strip based on a midi signal."""
     def __init__(self, strip, color_profile):
         self.strip = strip
@@ -30,9 +33,12 @@ class MidiSignalProcessor:
 
     def process(self, midi_signal):
         """Find the leds and color for the given signal, and turn them on."""
-        midi_signal_type = midi_signal.type 
+        midi_signal_type = midi_signal.type
         if midi_signal_type == 'note_on':
             note = midi_signal.note
+            if note in self.ignore_notes:
+                return
+            print('PROCESSING NOTE: {0}'.format(note))
             LedOnMessage(
                 self.strip, 
                 self._get_leds_for_note(note), 
